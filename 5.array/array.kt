@@ -65,8 +65,8 @@ fun array() {
     println("max1 = $max1")
 
     // 치트키
-    var min2: Int = randomNumbers.min()
-    var max2: Int = randomNumbers.max()
+    val min2: Int = randomNumbers.min()
+    val max2: Int = randomNumbers.max()
     println("min2 = $min2")
     println("max2 = $max2")
 
@@ -77,9 +77,10 @@ fun array() {
     val array2 = Array<Int>(5) {0}
 
     for (index in array2.indices) {
-        println("숫자를 입력해주세요 : ")
+        print("(${index+1}) 숫자를 입력해주세요 : ")
         array2[index] = sc.nextInt()
     }
+    println("총 입력된 값들 : ${array2.toList()}")
 
     var total = 0
 
@@ -88,8 +89,8 @@ fun array() {
     }
 
     val average = total / array2.size.toDouble()
-    println("평균값은 : ${average}")
+    println("평균값 : $average")
 
     // 치트키
-    println("평균값은 : ${array2.average()}")
+    println("평균값 : ${array2.average()}")
 }

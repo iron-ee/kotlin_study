@@ -1,5 +1,6 @@
 package main.kotlin.variable
 
+
 fun variable() {
     // 1. 변수 선언 기본
     // val (Immutable) -> 초기에 값을 할당하면 더이상 값 변경 불가
@@ -39,6 +40,17 @@ fun variable() {
 
     val result: String = "이름은 ${name}이고 나이는 ${age}입니다."
     println(result)
+    println(name[0])
+    println(name[2])
+
+    val trimStr = """
+        ABC
+        DEF
+        $name
+        $age
+    """.trimIndent()
+
+    println(trimStr)
 
     ///////////////////////////////////////
 
@@ -65,8 +77,14 @@ fun variable() {
         // Dart 에서 ?? 와 똑같음, null 일 경우에 값을 지정해줄 수가 있음
     var length2 = nullableName2?.length ?: 3  // nullableName2.length 가 null 이면 3
 
+    fun startWithA(str: String?): Boolean {
+        return str?.startsWith('A')
+            ?: throw IllegalArgumentException("null이 들어왔습니다.")
+    }
+
         // 3-4. !! 연산자
         // Dart 에서 ! 와 똑같음,  !! 를 붙여주면 이 친구는 절대 null 이 아니야 라고 선언
     println(nullableName2!!.length)     // null 인데 null 이 아니야 라고 했으니 실행하면 NullPointException 에러 발생함.
                                         // 그래서 !! 연산자를 사용할 때는 유의해서 사용할 필요가 있음.
+
 }

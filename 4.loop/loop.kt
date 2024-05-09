@@ -7,6 +7,11 @@ fun loop() {
     // 대중적인 for 문과 while 문이 있다.
 
     // for
+    // in -> Iterable 이 구현된 타입이라면 모두 들어갈 수 있다.
+    // .. 연산자 : 범위를 만들어 내는 연산자
+    // IntRange -> IntProgression  등차수열  1) 시작 값  2) 끝 값  3) 공차
+    // downTo, step, until 모두 함수 (중위 함수 호출)
+
     // 1 ~ 10 까지 실행
     for(index: Int in 1..10) {
         println("(1) index = $index")
@@ -89,7 +94,7 @@ fun loop() {
     // 반복문 연습 예제
     // 입력받은 수 만큼의 층으로 * 피라미드 만들기
     val sc = Scanner(System.`in`)
-    println("줄 수를 입력해주세요 : ")
+    print("층 수를 입력해주세요 : ")
     val line = sc.nextInt()
 
     for (row: Int in 1..line) {
@@ -102,3 +107,9 @@ fun loop() {
         println()
     }
 }
+
+
+/*
+for each 문에서 java는 :  , kotlin 에서는 in 을 사용한다.
+for문에서 kotlin 은 등차수열과 in 을 사용한다.
+ */
