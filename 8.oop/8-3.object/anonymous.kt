@@ -1,4 +1,4 @@
-package main.kotlin.`object`
+package main.kotlin.oop.`object`
 
 // 익명 클래스
 // 특정 인터페이스나 클래스를 상속받은 구현체를 일회성으로 사용할 때 쓰는 클래스

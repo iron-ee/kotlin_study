@@ -1,4 +1,4 @@
-package main.kotlin.`object`
+package main.kotlin.oop.`object`
 
 class Person private constructor(
     var name: String,
@@ -6,7 +6,7 @@ class Person private constructor(
 ) {
 
     // static : 클래스가 인스턴스화 될 때 새로운 값이 복제되는게 아니고 정적으로 인스턴스끼리 값 공유
-    // companion object : 클래스와 동행하는 유일한 오브젝트
+    // companion object : 클래스와 동행하는 유일한 오브젝트 (동반 객체)
 
     // companion object 에 유틸성 함수들을 넣어도 되지만, 최상단 파일을 활용하는 것을 추천
 
@@ -47,6 +47,7 @@ class Person3 private constructor(
         // Person3 person = Person3.Factory.newBaby("Tim");     -> @JvmStatic 없을 때
         // Person3 person = Person3.newBaby("Tim");     -> @JvmStatic 있을 떈 바로 접근 가능
 
+        @JvmStatic
         fun newBaby(name:String): Person3 {
             return Person3(name, MIN_AGE)
         }

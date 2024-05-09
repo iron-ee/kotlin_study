@@ -1,4 +1,4 @@
-package main.kotlin.`object`
+package main.kotlin.oop.`object`
 
 /*
 -> java 에서 singleton 만들 때 이런식으로 만들거나

@@ -1,4 +1,4 @@
-package main.kotlin.access_control
+package main.kotlin.oop.access_control
 
 fun isDirectoryPath(path: String): Boolean {    // 파일 최상단에 바로 유틸 함수를 작성하면 편함.
     return path.endsWith("/")

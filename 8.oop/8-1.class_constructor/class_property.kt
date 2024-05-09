@@ -1,4 +1,4 @@
-package main.kotlin.class_constructor
+package main.kotlin.oop.class_constructor
 
 // 프로퍼티 = 필드 + getter + setter
 // java 와 다르게 kotlin 에서는 getter, setter 를 자동으로 만들어줌.

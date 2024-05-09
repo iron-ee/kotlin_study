@@ -1,4 +1,4 @@
-package main.kotlin.class_constructor
+package main.kotlin.oop.class_constructor
 
 abstract class Animal (
     protected val species: String,
