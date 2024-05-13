@@ -21,3 +21,8 @@ fun main() {
     3 add2 4
     3 add2 4 add2 5 add2 6
 }
+
+
+/*
+infix 함수는 함수 호출 방식을 바꿔주는 친구
+ */
